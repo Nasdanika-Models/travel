@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.nasdanika.models.travel/src/main/java" creationIcons="false"
+    editorDirectory="" modelPluginID="org.nasdanika.models.travel" modelName="travel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" importerID="org.eclipse.emf.importer.ecore"
+    bundleManifest="false" featureDelegation="Dynamic" complianceLevel="21.0" suppressGenModelAnnotations="false"
+    copyrightFields="false" usedGenPackages="../../org.nasdanika.ncore/model/ncore.genmodel#//ncore ../../org.nasdanika.models.party/model/party.genmodel#//party"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>travel.ecore</foreignModel>
+  <genPackages prefix="Travel" basePackage="org.nasdanika.models" disposableProviderFactory="true"
+      ecorePackage="travel.ecore#/">
+    <genClasses ecoreClass="travel.ecore#//Directory">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference travel.ecore#//Directory/travelers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference travel.ecore#//Directory/locations"/>
+    </genClasses>
+    <genClasses ecoreClass="travel.ecore#//JourneyLog">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference travel.ecore#//JourneyLog/journeys"/>
+    </genClasses>
+    <genClasses ecoreClass="travel.ecore#//Transit">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference travel.ecore#//Transit/origin"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference travel.ecore#//Transit/destination"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference travel.ecore#//Transit/segments"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference travel.ecore#//Transit/participants"/>
+    </genClasses>
+    <genClasses ecoreClass="travel.ecore#//Journey"/>
+    <genClasses ecoreClass="travel.ecore#//Cruise"/>
+    <genClasses ecoreClass="travel.ecore#//Excursion"/>
+    <genClasses ecoreClass="travel.ecore#//Traveler">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference travel.ecore#//Traveler/transits"/>
+    </genClasses>
+    <genClasses ecoreClass="travel.ecore#//Location">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference travel.ecore#//Location/children"/>
+    </genClasses>
+    <genClasses ecoreClass="travel.ecore#//Continent"/>
+    <genClasses ecoreClass="travel.ecore#//Region"/>
+    <genClasses ecoreClass="travel.ecore#//Country"/>
+    <genClasses ecoreClass="travel.ecore#//AdministrativeDivision"/>
+    <genClasses ecoreClass="travel.ecore#//State"/>
+    <genClasses ecoreClass="travel.ecore#//Settlement"/>
+    <genClasses ecoreClass="travel.ecore#//City"/>
+    <genClasses ecoreClass="travel.ecore#//Village"/>
+    <genClasses ecoreClass="travel.ecore#//Accommodation"/>
+    <genClasses ecoreClass="travel.ecore#//Hotel"/>
+    <genClasses ecoreClass="travel.ecore#//House"/>
+    <genClasses ecoreClass="travel.ecore#//Apartment"/>
+    <genClasses ecoreClass="travel.ecore#//Transportation"/>
+  </genPackages>
+</genmodel:GenModel>

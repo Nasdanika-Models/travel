@@ -1,0 +1,217 @@
+{
+  "references/eClassifiers/Directory/references/eStructuralFeatures/locations/index.html": {
+    "path": "Directory/References/locations",
+    "link-uuid": "317c4204-bb49-4873-a3d7-183d1144b3f0",
+    "title": "locations",
+    "content": "Type Location Multiplicity 0..*",
+    "timestamp": 1760409746074
+  },
+  "references/eClassifiers/Transit/references/eStructuralFeatures/segments/index.html": {
+    "path": "Transit/References/segments",
+    "link-uuid": "6da89c22-4198-4dbb-9c2f-5b741c956ddf",
+    "title": "segments",
+    "content": "Type Transit Multiplicity 0..*",
+    "timestamp": 1760409746259
+  },
+  "references/eClassifiers/Traveler/index.html": {
+    "link-uuid": "f514d12a-f122-474f-848b-187450f840d4",
+    "title": "Traveler",
+    "content": "TODO",
+    "timestamp": 1760409746279
+  },
+  "references/eClassifiers/Traveler/inheritance.html": {
+    "path": "Traveler/Inheritance",
+    "link-uuid": "7f759867-fe1e-42a2-b069-bd2108e7a55b",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746280
+  },
+  "references/eClassifiers/Region/inheritance.html": {
+    "path": "Region/Inheritance",
+    "link-uuid": "723b3892-e011-41db-bd4b-9591a5646cef",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746207
+  },
+  "references/eClassifiers/Village/inheritance.html": {
+    "path": "Village/Inheritance",
+    "link-uuid": "ea4db8ff-41c2-4b04-a002-5be8048dbb02",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746295
+  },
+  "references/eClassifiers/Location/references/eStructuralFeatures/children/index.html": {
+    "path": "Location/References/children",
+    "link-uuid": "c72708e0-22e3-4f0d-9aca-6547801494b2",
+    "title": "children",
+    "content": "Type Location Multiplicity 0..*",
+    "timestamp": 1760409746194
+  },
+  "references/eClassifiers/House/inheritance.html": {
+    "path": "House/Inheritance",
+    "link-uuid": "313eb876-dc2d-4841-9eb0-f79c560b2e70",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746129
+  },
+  "references/eClassifiers/Journey/inheritance.html": {
+    "path": "Journey/Inheritance",
+    "link-uuid": "49a9a8ce-d1d1-456b-bb24-3ae609c93c35",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746153
+  },
+  "references/eClassifiers/Transit/references/eStructuralFeatures/origin/index.html": {
+    "path": "Transit/References/origin",
+    "link-uuid": "2c9e426b-19f1-4c9d-84af-fc2171c3fabe",
+    "title": "origin",
+    "content": "Type Location Multiplicity 1",
+    "timestamp": 1760409746257
+  },
+  "references/eClassifiers/Transit/references/eStructuralFeatures/participants/index.html": {
+    "path": "Transit/References/participants",
+    "link-uuid": "080f8dd6-3ae9-4a84-8a7c-8a8067b2ba96",
+    "title": "participants",
+    "content": "Type Traveler Multiplicity 0..*",
+    "timestamp": 1760409746258
+  },
+  "references/eClassifiers/Traveler/references/eStructuralFeatures/transits/index.html": {
+    "path": "Traveler/References/transits",
+    "link-uuid": "62696fa5-5cbe-4e4f-9983-7161d46044d0",
+    "title": "transits",
+    "content": "Type Transit Multiplicity 0..*",
+    "timestamp": 1760409746283
+  },
+  "references/eClassifiers/AdministrativeDivision/inheritance.html": {
+    "path": "AdministrativeDivision/Inheritance",
+    "link-uuid": "5c31ea7a-ac80-4000-80e4-153a35b746a9",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1760409745946
+  },
+  "references/eClassifiers/Transit/references/eStructuralFeatures/destination/index.html": {
+    "path": "Transit/References/destination",
+    "link-uuid": "e3b8c70d-9e32-40ce-bbc6-cc7549177cee",
+    "title": "destination",
+    "content": "Type Location Multiplicity 0..1",
+    "timestamp": 1760409746255
+  },
+  "references/eClassifiers/City/inheritance.html": {
+    "path": "City/Inheritance",
+    "link-uuid": "17f83ab9-877d-4e75-9627-3f42895cd029",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409745985
+  },
+  "references/eClassifiers/Accommodation/inheritance.html": {
+    "path": "Accommodation/Inheritance",
+    "link-uuid": "df20ec33-9f1d-418a-a5df-dce15744ff76",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1760409745927
+  },
+  "references/eClassifiers/Apartment/inheritance.html": {
+    "path": "Apartment/Inheritance",
+    "link-uuid": "6c2d5753-f236-4a1a-b5fa-a6beb0d4d070",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409745965
+  },
+  "references/eClassifiers/Country/inheritance.html": {
+    "path": "Country/Inheritance",
+    "link-uuid": "a5223c5d-fe5a-4287-84fb-465f3e02516c",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746027
+  },
+  "index.html": {
+    "link-uuid": "a1a2ffbf-d3f6-460b-97ac-52ee19179f04",
+    "title": "Travel Model",
+    "content": "This module provides classes for modeling travels/journeys. Sources Maven Central Javadoc TODO - narration explaining the model classes and their relationships at a high level with detailed explanations at the class level. For example a Traveler participates in one or more Journeys&hellip;",
+    "timestamp": 1760409745906
+  },
+  "references/eClassifiers/JourneyLog/references/eStructuralFeatures/journeys/index.html": {
+    "path": "JourneyLog/References/journeys",
+    "link-uuid": "42a728cc-6d9b-4708-9291-e22ce60f0df6",
+    "title": "journeys",
+    "content": "Type Journey Multiplicity 0..*",
+    "timestamp": 1760409746174
+  },
+  "references/eClassifiers/Cruise/inheritance.html": {
+    "path": "Cruise/Inheritance",
+    "link-uuid": "36fc7b91-bd9b-4a9c-9c13-7e74b25ae9c5",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746051
+  },
+  "references/eClassifiers/State/inheritance.html": {
+    "path": "State/Inheritance",
+    "link-uuid": "e5d93808-b424-4f04-86c6-5a3bb70df18d",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746236
+  },
+  "references/eClassifiers/Location/inheritance.html": {
+    "path": "Location/Inheritance",
+    "link-uuid": "6e0094bb-39f0-4420-bfa8-d2fec71ed26e",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1760409746191
+  },
+  "references/eClassifiers/Hotel/inheritance.html": {
+    "path": "Hotel/Inheritance",
+    "link-uuid": "f3aa25c8-b2e8-44da-994e-6c012669b4ff",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746110
+  },
+  "references/eClassifiers/Continent/inheritance.html": {
+    "path": "Continent/Inheritance",
+    "link-uuid": "47a608e2-47fc-4a1f-9fb7-a311e8e7b16f",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746005
+  },
+  "references/eClassifiers/Settlement/inheritance.html": {
+    "path": "Settlement/Inheritance",
+    "link-uuid": "6306ddf9-41c9-4e38-81dd-a6247be92171",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1760409746221
+  },
+  "references/eClassifiers/Directory/inheritance.html": {
+    "path": "Directory/Inheritance",
+    "link-uuid": "c4700583-d718-4250-99b7-c036648d3528",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1760409746071
+  },
+  "references/eClassifiers/JourneyLog/inheritance.html": {
+    "path": "JourneyLog/Inheritance",
+    "link-uuid": "19d0cf6b-6d1c-423b-ba91-508c61c08c90",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746170
+  },
+  "references/eClassifiers/Excursion/inheritance.html": {
+    "path": "Excursion/Inheritance",
+    "link-uuid": "276210a6-02d1-484d-9511-048f94e5f6d1",
+    "title": "Inheritance",
+    "content": "Supertypes ",
+    "timestamp": 1760409746093
+  },
+  "references/eClassifiers/Directory/references/eStructuralFeatures/travelers/index.html": {
+    "path": "Directory/References/travelers",
+    "link-uuid": "04a0678c-404e-4a60-9d12-2eadfa0e6a9a",
+    "title": "travelers",
+    "content": "Type Traveler Multiplicity 0..*",
+    "timestamp": 1760409746076
+  },
+  "references/eClassifiers/Transit/inheritance.html": {
+    "path": "Transit/Inheritance",
+    "link-uuid": "5c22a49d-e801-44c9-a432-c7c3632f647a",
+    "title": "Inheritance",
+    "content": "Supertypes Subtypes  ",
+    "timestamp": 1760409746252
+  }
+}

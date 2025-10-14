@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="travel" nsURI="ecore://nasdanika.org/models/travel" nsPrefix="org.nasdanika.models.travel">
+  <eClassifiers xsi:type="ecore:EClass" name="Directory" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedStringIdentity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="travelers" upperBound="-1"
+        eType="#//Traveler" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="locations" upperBound="-1"
+        eType="#//Location" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="JourneyLog" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedElement #//Directory">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="journeys" upperBound="-1"
+        eType="#//Journey" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//StringIdentity/id"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transit" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedStringIdentity ../../org.nasdanika.ncore/model/ncore.ecore#//Period">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="origin" lowerBound="1"
+        eType="#//Location"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="destination" eType="#//Location"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="segments" upperBound="-1"
+        eType="#//Transit" containment="true" eKeys="../../org.nasdanika.ncore/model/ncore.ecore#//StringIdentity/id"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="participants" upperBound="-1"
+        eType="#//Traveler" eOpposite="#//Traveler/transits"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Journey" eSuperTypes="#//Transit #//Directory"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Cruise" eSuperTypes="#//Transit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Excursion" eSuperTypes="#//Transit"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Traveler" eSuperTypes="../../org.nasdanika.models.party/model/party.ecore#//Person">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="transits" upperBound="-1"
+        eType="#//Transit" eOpposite="#//Transit/participants"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Location" eSuperTypes="../../org.nasdanika.ncore/model/ncore.ecore#//DocumentedNamedStringIdentity">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="children" upperBound="-1"
+        eType="#//Location" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Continent" eSuperTypes="#//Location"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Region" eSuperTypes="#//Location"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Country" eSuperTypes="#//Location"/>
+  <eClassifiers xsi:type="ecore:EClass" name="AdministrativeDivision" eSuperTypes="#//Location"/>
+  <eClassifiers xsi:type="ecore:EClass" name="State" eSuperTypes="#//AdministrativeDivision"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Settlement" eSuperTypes="#//Location"/>
+  <eClassifiers xsi:type="ecore:EClass" name="City" eSuperTypes="#//Settlement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Village" eSuperTypes="#//Settlement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Accommodation" eSuperTypes="#//Location"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Hotel" eSuperTypes="#//Accommodation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="House" eSuperTypes="#//Accommodation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Apartment" eSuperTypes="#//Accommodation"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Transportation"/>
+</ecore:EPackage>
