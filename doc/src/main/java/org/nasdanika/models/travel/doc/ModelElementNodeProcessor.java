@@ -1,4 +1,4 @@
-package org.nasdanika.models.sql.doc;
+package org.nasdanika.models.travel.doc;
 
 import java.util.Collection;
 import java.util.Map;
@@ -29,31 +29,6 @@ import org.nasdanika.ncore.NamedElement;
  * @param <T>
  */
 public abstract class ModelElementNodeProcessor<T extends EObject> extends EObjectNodeProcessor<T> {
-	
-//	Catalog.java
-//	Schema.java
-//	Table.java
-//	
-//	Column.java
-//	DataType.java
-//	Deferrability.java
-//	ImportedKey.java
-//	ImportedKeyColumn.java
-//	ImportedKeyRule.java
-//	PrimaryKey.java
-//	TableType.java
-//	Type.java
-
-	
-	public static final String DATABASE_ICON = "https://sql.models.nasdanika.org/images/sql-server.svg";
-	public static final String CATALOG_ICON = "https://sql.models.nasdanika.org/images/catalog.svg";
-	public static final String SCHEMA_ICON = "https://sql.models.nasdanika.org/images/scheme.svg";
-	public static final String TABLE_ICON = "https://sql.models.nasdanika.org/images/table.svg";
-	public static final String COLUMN_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-column.svg";
-	public static final String DATA_TYPE_ICON = "https://sql.models.nasdanika.org/images/data-format.svg";
-	public static final String TABLE_TYPE_ICON = "https://sql.models.nasdanika.org/images/spreadsheet-file.svg";
-	public static final String FOREIGN_KEY_ICON = "https://sql.models.nasdanika.org/images/relational.svg";
-	public static final String PRIMARY_KEY_ICON = "https://sql.models.nasdanika.org/images/key.svg";
 	
 	protected Collection<DocumentationFactory> documentationFactories;
 	

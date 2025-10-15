@@ -1,14 +1,14 @@
 import org.nasdanika.capability.CapabilityFactory;
-import org.nasdanika.models.sql.doc.SqlNodeProcessorFactoryCapabilityFactory;
+import org.nasdanika.models.travel.doc.TravelNodeProcessorFactoryCapabilityFactory;
 
-module org.nasdanika.models.sql.doc {
+module org.nasdanika.models.trvel.doc {
 		
-	requires transitive org.nasdanika.models.sql;
+	requires transitive org.nasdanika.models.travel;
 	requires transitive org.nasdanika.models.ecore.graph;
 	
-	exports org.nasdanika.models.sql.doc;
-	opens org.nasdanika.models.sql.doc; // For loading resources
+	exports org.nasdanika.models.travel.doc;
+	opens org.nasdanika.models.travel.doc; // For loading resources
 
-	provides CapabilityFactory with	SqlNodeProcessorFactoryCapabilityFactory;
+	provides CapabilityFactory with	TravelNodeProcessorFactoryCapabilityFactory;
 	
 }

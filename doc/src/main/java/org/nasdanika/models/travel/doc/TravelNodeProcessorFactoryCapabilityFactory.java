@@ -1,4 +1,4 @@
-package org.nasdanika.models.sql.doc;
+package org.nasdanika.models.travel.doc;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -15,7 +15,7 @@ import org.nasdanika.models.app.graph.emf.HtmlAppGenerator.NodeProcessorFactoryR
 
 import reactor.core.publisher.Flux;
 
-public class SqlNodeProcessorFactoryCapabilityFactory implements CapabilityFactory<NodeProcessorFactoryRequirement, Object> {
+public class TravelNodeProcessorFactoryCapabilityFactory implements CapabilityFactory<NodeProcessorFactoryRequirement, Object> {
 
 	@Override
 	public boolean canHandle(Object requirement) {
@@ -43,7 +43,7 @@ public class SqlNodeProcessorFactoryCapabilityFactory implements CapabilityFacto
 			cp.getPublisher().subscribe(df -> documentationFactories.add(df));
 		}				
 
-		SqlNodeProcessorFactory factory = new SqlNodeProcessorFactory(
+		TravelNodeProcessorFactory factory = new TravelNodeProcessorFactory(
 				requirement.context(), 
 				requirement.prototypeProvider(),
 				documentationFactories);
