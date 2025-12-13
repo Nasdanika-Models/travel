@@ -30,7 +30,7 @@ public class TravelerProcessorsFactory {
                     """
 	)
 	public EClassNodeProcessor createCatalogProcessor(
-			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 			ProgressMonitor progressMonitor) {		
@@ -69,7 +69,7 @@ public class TravelerProcessorsFactory {
 //					"""
 //	)
 //	public EReferenceNodeProcessor createSchemasProcessor(
-//			NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+//			NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 //			java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 //			BiConsumer<Label, ProgressMonitor> labelConfigurator,
 //			ProgressMonitor progressMonitor) {		

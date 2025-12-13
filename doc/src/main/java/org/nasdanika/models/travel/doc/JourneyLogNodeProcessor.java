@@ -14,7 +14,7 @@ import org.nasdanika.models.travel.JourneyLog;
 public class JourneyLogNodeProcessor extends ModelElementNodeProcessor<JourneyLog> {
 
 	public JourneyLogNodeProcessor(
-		NodeProcessorConfig<WidgetFactory, WidgetFactory> config, 
+		NodeProcessorConfig<WidgetFactory, WidgetFactory, Object> config, 
 		Context context,
 		java.util.function.BiFunction<EObject, ProgressMonitor, Action> prototypeProvider,
 		Collection<DocumentationFactory> documentationFactories) {
