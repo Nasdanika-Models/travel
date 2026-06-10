@@ -3,13 +3,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.nasdanika.models.travel</groupId>
-		<version>2026.2.0</version>
+		<version>2025.12.0</version>
 		<artifactId>parent</artifactId>
 		<relativePath>..</relativePath>
 	</parent>
-	<artifactId>ecore</artifactId>
+	<artifactId>doc</artifactId>
 	<packaging>jar</packaging>
-	<name>Ecore documentation processors</name>
+	<name>Model documentation generation processors</name>
 	<dependencies>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
